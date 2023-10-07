@@ -232,6 +232,35 @@ main {
     padding: 0.5rem;
     border-bottom: #1e68b3 5px solid; }
 
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #fff solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #1e68b3;
+      transition: all 0.5s ease-out; }
+
+.link, .link-dark, .link-light {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .link:hover, .link-dark:hover, .link-light:hover {
+    background: #1e68b3;
+    color: #000; }
+
+.link-dark {
+  background: rgba(0, 0, 0, 0.533);
+  color: #fff; }
+
+.link-light {
+  background: rgba(7, 184, 255, 0.533);
+  color: #333; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
