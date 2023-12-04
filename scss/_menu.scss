@@ -92,9 +92,9 @@
     .portrait {
         width: 250px;
         height: 250px;
-        background: url('../img/portrait.jpg');
+        // background: url('../img/portrait.jpg');
         border-radius: 50%;
-        border: solid 3px $secondary-color;
+        // border: solid 3px $secondary-color;
       }
     }
 
@@ -133,4 +133,4 @@
     .nav-item:nth-child(#{$x}) {
       transition-delay: $x * 0.1s;
     }
-}
+  }
