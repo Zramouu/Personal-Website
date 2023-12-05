@@ -11,7 +11,8 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
@@ -21,6 +22,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
 
   &.lg-heading {
     font-size: 6rem;
@@ -125,7 +127,6 @@ main {
 
     &:hover {
       opacity: 0.5;
-      border-color: $secondary-color;
       @include easeOut;
     }
   }
@@ -149,9 +150,9 @@ main {
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
-      color: set-text-color($secondary-color);
+      color: set-text-color lighten($secondary-color, 100%);
       span {
-        color: set-text-color($secondary-color);
+        color: set-text-color lighten($secondary-color, 20%);
       }
     }
   }
@@ -184,7 +185,7 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
+  background: $primary-color ;
   color: set-text-color($primary-color);
   height: 60px;
 }
